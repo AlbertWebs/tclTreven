@@ -216,9 +216,21 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-3">
-							<div class="footer_box__block text-center">
-								<h4>About Us</h4>
-								<p><?php echo html_entity_decode($Settings->welcome); ?></p>
+							<div class="footer_box__block address-box">
+								<h4 class="text-center">About Us</h4>
+								<p class="text-center"><?php echo html_entity_decode($Settings->welcome); ?></p>
+								
+									<ul>
+									
+										<li>
+											<i class="fa fa-clock-o"></i>
+											<p>
+											<?php echo html_entity_decode($Settings->days); ?>
+
+											</p>
+										</li>
+									</ul>
+								
 							</div>
 						</div>
 						<div class="col-lg-3 mt-sm-30 mt-xs-30">
@@ -264,10 +276,23 @@
 								<h4>Contact info</h4>
 								<ul>
 									<li>
+										<i class="fa fa-whatsapp"></i>
+										<p>
+											<a href="https://wa.me/12025400134">WhatsApp +12025400134</a>
+										</p>
+									</li>
+								
+									
+									<li>
 										<i class="fa fa-phone"></i>
 										<p>
-											Call Us <?php echo e($Settings->mobile); ?>
-
+											<a href="tel:+254706020308">Call Us +254706020308</a>
+										</p>
+									</li>
+									<li>
+										<i class="fa fa-phone"></i>
+										<p>
+											<a href="tel: +254712857550">Call Us +254712857550</a>
 										</p>
 									</li>
 									<li>
@@ -279,17 +304,11 @@
 									<li>
 										<i class="fa fa-map-marker"></i>
 										<p>
-                    <?php echo e($Settings->location); ?>
+                                            <?php echo e($Settings->location); ?>
 
 										</p>
 									</li>
-									<li>
-										<i class="fa fa-clock-o"></i>
-										<p>
-										<?php echo html_entity_decode($Settings->days); ?>
-
-										</p>
-									</li>
+									
 								</ul>
 							</div>
 						</div>
