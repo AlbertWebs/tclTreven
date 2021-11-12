@@ -186,30 +186,7 @@
 
 		<!-- Footer -->
 		<footer>
-			<div class="top_footer_info__block ptb-20">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-4">
-							<div class="single_info__block">
-								<i class="fa fa-phone"></i>
-								<h4><?php echo e($Settings->mobile); ?> <span>Monday-Friday, 8am-7pm</span></h4>
-							</div>
-						</div>
-						<div class="col-md-4">
-							<div class="single_info__block">
-								<i class="fa fa-envelope-o"></i>
-								<h4><?php echo e($Settings->email); ?> <span>Monday-Friday, 8am-7pm</span></h4>
-							</div>
-						</div>
-						<div class="col-md-4">
-							<div class="single_info__block">
-								<i class="fa fa-map-marker"></i>
-								<h4><?php echo e($Settings->location); ?> <span>Get all the information</span></h4>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+			
 			<?php $Banner = DB::table('banners')->where('section','footer')->get(); ?>
 		    <?php $__currentLoopData = $Banner; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $banner): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
 			<div class="main_footer__block pb-0 pt-60" style="background: url('<?php echo e(url('/')); ?>/uploads/banners/<?php echo e($banner->image); ?>') no-repeat 0 0;">

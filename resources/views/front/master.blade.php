@@ -184,7 +184,7 @@
 
 		<!-- Footer -->
 		<footer>
-			<div class="top_footer_info__block ptb-20">
+			{{-- <div class="top_footer_info__block ptb-20">
 				<div class="container">
 					<div class="row">
 						<div class="col-md-4">
@@ -207,7 +207,7 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</div> --}}
 			<?php $Banner = DB::table('banners')->where('section','footer')->get(); ?>
 		    @foreach($Banner as $banner)
 			<div class="main_footer__block pb-0 pt-60" style="background: url('{{url('/')}}/uploads/banners/{{$banner->image}}') no-repeat 0 0;">
