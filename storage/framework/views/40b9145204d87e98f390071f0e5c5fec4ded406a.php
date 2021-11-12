@@ -97,18 +97,22 @@
 									<li>
 										<div class="icon ion-android-call"></div>
 										<div class="content">
+										
 											<p>
-                                            <?php echo e($Setting->mobile); ?>
-
+												<a href="tel:+254706020308">Call Us +254706020308</a>
 											</p>
 											<p>
-                                            <?php echo e($Setting->mobile_one); ?>
-
+												<a href="tel: +254712857550">Call Us +254712857550</a>
 											</p>
+										</div>
+									</li>
+									<li>
+										<div class="icon fa fa-whatsapp"></div>
+										<div class="content">
 											<p>
-                                            <?php echo e($Setting->mobile_two); ?>
-
+												<a href="https://wa.me/12025400134">WhatsApp +12025400134</a>
 											</p>
+											
 										</div>
 									</li>
 									<li>
